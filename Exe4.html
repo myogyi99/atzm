@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script type="text/javascript">		
+		function calculate()
+	{
+		var first_number=parseInt(document.myform.first_number.value);
+		var Second_number=parseInt(document.myform.Second_number.value);
+		//console.log(first_number,Second_number);
+		var sum=first_number+Second_number;
+		//console.log(sum);
+		document.myform.sum.value=sum;
+		
+		//console.log(sub);
+		
+	}
+
+
+	</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form name="myform">
+		first number:<input type="number" name="first_number"><br>
+		Second Number:<input type="number" name="Second_number"><br>
+		<input type="button"  value="calculate" onclick="calculate()"><br>
+		sum:<input type="number" name="sum"><br>
+		
+
+		
+	</form>
+
+</body>
+</html>
